@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+/* Reset e fundo psicodélico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik Moonrocks', cursive;
+    background: linear-gradient(135deg, #ff00cc, #3333ff, #00ffcc, #ffff00);
+    background-size: 400% 400%;
+    animation: backgroundShift 8s infinite;
+    color: #fff;
+    text-align: center;
+}
+
+/* Animação de fundo psicodélico */
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container saltitante */
+#container {
+    margin: 60px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 5px dashed #00ffcc;
+    border-radius: 25px;
+    box-shadow: 0 0 25px #ff00cc, 0 0 50px #00ffff;
+    animation: bounce 3s infinite alternate;
+}
+
+/* Bounce effect */
+@keyframes bounce {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-10px); }
+}
+
+/* Título vibrante */
+h1 {
+    font-size: 3.5em;
+    color: #ffcc00;
+    text-shadow: 3px 3px #ff00ff, -3px -3px #00ffff;
+    animation: tilt 1s infinite alternate;
+}
+
+@keyframes tilt {
+    0% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
+
+/* Textarea estilo carnaval */
+textarea#pergunta {
+    width: 90%;
+    height: 120px;
+    padding: 20px;
+    font-size: 18px;
+    border: 3px solid #ffcc00;
+    border-radius: 20px;
+    background-color: #fff0f5;
+    color: #111;
+    box-shadow: 0 0 15px #ff00ff;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+textarea#pergunta:hover {
+    transform: rotate(2deg);
+}
+
+/* Botão explosivo */
+button {
+    margin-top: 20px;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffff, 0 0 25px #ff00ff;
+    animation: explode 1s infinite alternate;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05) rotate(3deg); }
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ffcc00, #00ffcc);
+    box-shadow: 0 0 20px #fff, 0 0 40px #ff0;
+}
+
+/* Título de resposta insano */
+h3 {
+    font-size: 24px;
+    margin-top: 40px;
+    color: #ffeb3b;
+    text-shadow: 2px 2px #000;
+    transform: skewX(-10deg);
+}
+
+/* Caixa de resposta doidona */
+#resposta {
+    margin-top: 20px;
+    padding: 25px;
+    font-size: 20px;
+    background: repeating-linear-gradient(45deg, #ff00ff, #ff00ff 10px, #00ffff 10px, #00ffff 20px);
+    color: #000;
+    border-radius: 20px;
+    border: 3px dashed #000;
+    animation: crazyBorder 1s infinite;
+    display: none;
+}
+
+/* Animação da borda piscante */
+@keyframes crazyBorder {
+    0% { border-color: #000; }
+    25% { border-color: #ff0; }
+    50% { border-color: #0ff; }
+    75% { border-color: #f0f; }
+    100% { border-color: #000; }
+}
+
+
+/* Cursor doidão */
+body {
+    cursor: url('https://cur.cursors-4u.net/nature/nat-11/nat1041.cur'), auto;
+}
+
+/* Texto com efeito de glitch */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px red, -2px -2px cyan; }
+    25% { text-shadow: -2px 2px lime, 2px -2px magenta; }
+    50% { text-shadow: 4px 0 red, -4px 0 cyan; }
+    75% { text-shadow: -1px 2px yellow, 1px -2px blue; }
+    100% { text-shadow: 2px 2px red, -2px -2px cyan; }
+}
+
+h1 {
+    animation: glitch 0.5s infinite;
+}
+
+/* Texto tremendo */
+.shake {
+    animation: shakeText 0.3s infinite;
+}
+
+@keyframes shakeText {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(2px, -2px); }
+    50% { transform: translate(-2px, 2px); }
+    75% { transform: translate(2px, 2px); }
+    100% { transform: translate(-2px, -2px); }
+}
+
+/* Emoji dançando */
+.emoji-rave {
+    font-size: 2em;
+    animation: raveDance 1s infinite ease-in-out;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@keyframes raveDance {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.2) rotate(10deg); }
+    50% { transform: scale(1) rotate(-10deg); }
+    75% { transform: scale(1.2) rotate(10deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Estilo do easter egg */
+#easterEgg {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: lime;
+    background: black;
+    padding: 5px 10px;
+    border: 2px solid lime;
+    display: none;
+    z-index: 999;
+}
+body {
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/lined-paper.png');
+    color: lime;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 0 red;
+    margin: 0;
+    padding: 0;
+    animation: rainbowBG 2s infinite linear;
+}
+
+@keyframes rainbowBG {
+    0%   { background-color: red; }
+    25%  { background-color: yellow; }
+    50%  { background-color: lime; }
+    75%  { background-color: cyan; }
+    100% { background-color: magenta; }
+}
+
+h1 {
+    font-size: 60px;
+    color: yellow;
+    background: repeating-linear-gradient(45deg, red, red 10px, blue 10px, blue 20px);
+    text-align: center;
+    border: 10px double green;
+    padding: 10px;
+    margin: 0;
+}
+
+textarea {
+    background: url('https://www.publicdomainpictures.net/pictures/270000/velka/old-paper-background-1540734590MoC.jpg');
+    color: black;
+    border: 5px dashed fuchsia;
+    font-family: 'Courier New', monospace;
+    width: 90%;
+    height: 100px;
+    resize: both;
+}
+
+button {
+    background: linear-gradient(to right, orange, pink);
+    font-size: 24px;
+    padding: 15px;
+    border: 8px groove purple;
+    text-transform: uppercase;
+    animation: spin 1s infinite linear;
+    cursor: crosshair;
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#resposta {
+    font-weight: bold;
+    background: black;
+    color: red;
+    font-size: 32px;
+    border: 10px ridge cyan;
+    margin-top: 20px;
+    padding: 20px;
+    transform: skewX(10deg);
+    text-align: center;
+}
+
+#container {
+    margin: 0 auto;
+    padding: 30px;
+    background: radial-gradient(circle, violet, blue, green);
+    border: 12px outset hotpink;
+    width: 95%;
+    box-shadow: inset 0 0 20px yellow;
+}
