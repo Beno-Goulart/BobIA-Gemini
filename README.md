@@ -1,5 +1,8 @@
 # BobIA
 
+Este projeto é baseado em BobIA de Marise Miranda, Matheus Matos e Alexander Gonçalves, sob a licença MIT.
+https://github.com/BandTec/BobIA
+
 _Este é um projeto educativo desenvolvido para auxiliar os alunos na disciplina de Arquitetura Computacional. Ele consiste em uma API e uma interface web que utilizam o serviço de inteligência artificial Google Generative AI (Gemini) para responder perguntas relacionadas ao tema da disciplina._
 
 ## Instalação e Configuração
